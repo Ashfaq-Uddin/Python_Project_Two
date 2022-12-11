@@ -1,0 +1,20 @@
+First problem will be wih the replace.choice(word) function.
+## The choice function returns a random word.
+
+Second problem I ran in was the condition for the valid word function. Not all the words are one single word some are separated by a space others have - between them.
+## If loop has 2 conditions in the list then in the list should be twice.
+
+Third issue was the hangman's variables. The game needed a set for the input, a set for the alphabets so that no invalid character was present, a set for used characters so no lives would have been lost, a set with all the characters of the word, finally a list for showing the word listing of the user with gaps.
+## The word_list had a loop which tok some time [letter if letter in used_letters else "_" for letter in word].
+## This took some time, but it basically is IF LETTER is IN USED_LETTERS then add it to the list ELSE add _ FOR the LETTERS that is present in WORD.
+## Bear in mind at this point words present in used_letter are removed for word
+
+Forth error was a silly mistake of and or in the while loop
+## Or in the while was not ending the while loop and the program kept on running
+
+Overview:
+The program takes input stores it in user_word.
+If the letter is an alphabet only then it would be added to the list used_word
+The word and its letters are put in a set of word_letter
+If the user input is available in the used list and the word_letter list only then that letter would be removed from the word_letter list
+The while loop will run only until you have a live or the word_letter list is empty
